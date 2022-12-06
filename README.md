@@ -24,7 +24,10 @@
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
 # PyProgramForMinimalAndAnnualTrendFlowEstimation
-This Python program for trend flow estimation in Serbia
+This Python program is predictive analytics for rivers flow estimation in Serbia. This Code applies Mann - Kendall test which works for all distributions to analyze time series data for trends. If there is no trend, than probability value p is greater than 0.05, otherwise, there is a trend in time series with significant level (p-value) less or equal than 0.05 and trend could be positive or negative. With respect to Mann-Kendall test, the Theil-Sen estimator is used trend slope calculation method in conjunction with other trend analysis methods, mostly with the Mann-Kendall test 
+Moreover, the Theil-Sen estimator is used to calculate trend intercept and slope. For this purpose is used `pyMannkendal` package.
+
+two-step procedure for trend estimation is applied in this research aiming at trend detection using the non-parametric Mann - Kendall test (Step 1), and trend modelling via the Theil-Sen trend estimator (Step 2) (Figure 1).
 
 ## What is the Mann-Kendall Test ?
 The Mann-Kendall Trend Test (sometimes called the MK test) is used to analyze time series data for consistently increasing or decreasing trends (monotonic trends). It is a non-parametric test, which means it works for all distributions (i.e. data doesn't have to meet the assumption of normality), but data should have no serial correlation. If the data has a serial correlation, it could affect in significant level (p-value). It could lead to misinterpretation. To overcome this problem, researchers proposed several modified Mann-Kendall tests (Hamed and Rao Modified MK Test, Yue and Wang Modified MK Test, Modified MK test using Pre-Whitening method, etc.). Seasonal Mann-Kendall test also developed to remove the effect of seasonality.
