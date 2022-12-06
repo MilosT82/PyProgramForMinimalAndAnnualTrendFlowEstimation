@@ -45,9 +45,9 @@ And all Mann-Kendall tests return a named tuple which contained `WaterFlowEstima
 - **SlopeSredGod/SlopeMinSrMes**: Theil-Sen estimator for slope
 - **InterceptSredGod/InterceptMinSrMes**: Theil-Sen estimator for intercept 
 - **TrendSredGod/TrendMinSrMes**: Tells about trend (increasing, decreasing or no trend)
-- **ShapeParamSredGod/ShapeParamMinSrMes**: Calculate shape parameter
-- **ScaleParamSredGod/ScaleParamMinSrMes**: Calculate scale parameter
-- **LocationParamSredGod/LocationParamMinSrMes**: Calculate location parameter
+- **ShapeParamSredGod/ShapeParamMinSrMes**: Calculation of shape parameter
+- **ScaleParamSredGod/ScaleParamMinSrMes**: Calculation of scale parameter
+- **LocationParamSredGod/LocationParamMinSrMes**: Calculation of location parameter
 - **NumberOfYears**: Number of observation(years)
 - **NumberOfYears**: Number of observation(years)
 - **NumberOfYears**: Number of observation(years)
