@@ -1,6 +1,14 @@
 # PyProgramForMinimalAndAnnualTrendFlowEstimation
 This Python program for minimal and annual trend flow estimation in Serbia
 
+<div align="center">
+ <h3>
+	<img src="https://miro.medium.com/max/720/1*CDj-lEsfn9HAbpMSNmziLQ.gif"      width="300" 
+     height="200"/>
+</h3>
+</div>
+
+
 <h3 align="center">University professor and data scientist</h3>
 
 - 🔭 I’m currently working on **faculty**
@@ -8,6 +16,7 @@ This Python program for minimal and annual trend flow estimation in Serbia
 - 🌱 I’m currently learning **ML algortihms**
 
 - 📫 How to reach me **milos.todorov82@gmail.com**
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -91,9 +100,10 @@ sen's slope function required data vector. seasonal sen's slope also has optiona
 
 ## Dependencies
 
-For the installation of `pyMannKendall`, the following packages are required:
+For running program the following packages are required:
 - [numpy](https://www.numpy.org/)
 - [scipy](https://www.scipy.org/)
+- [pyMannKendall](https://github.com/mmhs013/pyMannKendall)
 
 ## Installation
 
