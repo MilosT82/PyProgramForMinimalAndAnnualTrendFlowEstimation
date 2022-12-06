@@ -104,6 +104,7 @@ For running program the following packages are required:
 - [numpy](https://www.numpy.org/)
 - [scipy](https://www.scipy.org/)
 - [pyMannKendall](https://github.com/mmhs013/pyMannKendall)
+- [scipy](https://scipy.org/)
 
 ## Installation
 
