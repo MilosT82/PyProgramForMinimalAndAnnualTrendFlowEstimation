@@ -48,13 +48,13 @@ And all Mann-Kendall tests return a named tuple which contained `WaterFlowEstima
 - **ShapeParamSredGod/ShapeParamMinSrMes**: Calculation of shape parameter
 - **ScaleParamSredGod/ScaleParamMinSrMes**: Calculation of scale parameter
 - **LocationParamSredGod/LocationParamMinSrMes**: Calculation of location parameter
-- **NumberOfYears**: Number of observation(years)
-- **NumberOfYears**: Number of observation(years)
-- **NumberOfYears**: Number of observation(years)
-- **NumberOfYears**: Number of observation(years)
-- **NumberOfYears**: Number of observation(years)
-- **NumberOfYears**: Number of observation(years)
-- **NumberOfYears**: Number of observation(years)
+- **River No.**: Number of observation(years)
+- **River basin**: Number of observation(years)
+- **River**: Number of observation(years)
+- **Hydrological station**: Number of observation(years)
+- **Drainage Area (km2)**: Number of observation(years)
+- **X coordinate**: Number of observation(years)
+- **Y coordinate**: Number of observation(years)
 
 ## Dependencies
 
