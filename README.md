@@ -34,7 +34,7 @@ This datataset contains measurements from 3 hydrological stations of the Republi
 
 ## Input datasets
 
-All Mann-Kendall test functions have almost similar input parameters. Those are:
+There are two Excel files with input data. The first one is `InputData.xlsx` and it contains measurements from 3 hydrological stations. The second one is `coordinates.xlsx` and it displays basic information about hidrological stations.
 
 - **x**:   a vector (list, numpy array or pandas series) data
 - **alpha**: significance level (0.05 is the default)
@@ -50,9 +50,9 @@ Program generates `WaterFlowEstimationResultsWithCooordinates.xls` file, i.e.tab
 - **SlopeSredGod/SlopeMinSrMes**: Theil-Sen estimator for slope
 - **InterceptSredGod/InterceptMinSrMes**: Theil-Sen estimator for intercept 
 - **TrendSredGod/TrendMinSrMes**: Tells about trend (increasing, decreasing or no trend)
-- **ShapeParamSredGod/ShapeParamMinSrMes**: Calculation of shape parameter
-- **ScaleParamSredGod/ScaleParamMinSrMes**: Calculation of scale parameter
-- **LocationParamSredGod/LocationParamMinSrMes**: Calculation of location parameter
+- **ShapeParamSredGod/ShapeParamMinSrMes**: Calculation of the shape parameter
+- **ScaleParamSredGod/ScaleParamMinSrMes**: Calculation of the scale parameter
+- **LocationParamSredGod/LocationParamMinSrMes**: Calculation of the location parameter
 - **River No.**: River number in registry
 - **River basin**: Name of the river basin
 - **River**: Name of the river 
