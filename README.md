@@ -24,7 +24,7 @@
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
 # PyProgramForMinimalAndAnnualTrendFlowEstimation
-This Python program estimates predictive analytics for rivers flow in Serbia. This code applies Mann - Kendall test which works for all distributions to analyze time series data for trends. If there is no trend, then probability value p is greater than 0.05, otherwise, there is a trend in time series with significant level (p-value) less or equal than 0.05 and trend could be positive or negative. 
+This Python program is for used predictive analytics estimation of the rivers flow in Serbia. This code applies Mann - Kendall test which works for all distributions to analyze time series data for trends. If there is no trend, then probability value p is greater than 0.05, otherwise, there is a trend in time series with significant level (p-value) less or equal than 0.05 and trend could be positive or negative. 
 
 With respect to Mann-Kendall test, the Theil-Sen estimator is used to calculate trend intercept and slope. For this purpose is used `pyMannkendal` package.
 
@@ -36,10 +36,20 @@ This datataset contains measurements from 3 hydrological stations of the Republi
 
 There are two Excel files with input data. The first one is `InputData.xlsx` and it contains measurements from 3 hydrological stations. The second one is `coordinates.xlsx` and it displays basic information about hidrological stations.
 
+`InputData.xlsx` table contains the following variables:
+
 - **x**:   a vector (list, numpy array or pandas series) data
 - **alpha**: significance level (0.05 is the default)
 - **lag**: No. of First Significant Lags (Only available in hamed_rao_modification_test and yue_wang_modification_test)
 - **period**: seasonal cycle. For monthly data it is 12, weekly data it is 52 (Only available in seasonal tests)
+
+`coordinates.xlsx` table contains the following variables:
+
+- **x**:   a vector (list, numpy array or pandas series) data
+- **alpha**: significance level (0.05 is the default)
+- **lag**: No. of First Significant Lags (Only available in hamed_rao_modification_test and yue_wang_modification_test)
+- **period**: seasonal cycle. For monthly data it is 12, weekly data it is 52 (Only available in seasonal tests)
+
 
 ## Table with results
 
@@ -72,8 +82,8 @@ For running program the following packages are required:
 ## Workmates
 
 On this project I have worked with:
-- [Milan Stojkovic](https://www.linkedin.com/in/milan-stojkovi%C4%87-0b8738b0/)
-- [Ivana Krtolica](https://www.linkedin.com/in/ivana-krtolica-96437a24b/)
+- [Milan Stojkovic, PhD](https://www.linkedin.com/in/milan-stojkovi%C4%87-0b8738b0/)
+- [Ivana Krtolica, PhD](https://www.linkedin.com/in/ivana-krtolica-96437a24b/)
 
 
 ## References
