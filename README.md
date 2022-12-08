@@ -24,7 +24,7 @@
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
 # PyProgramForMinimalAndAnnualTrendFlowEstimation
-This Python program is for used predictive analytics estimation of the rivers flow in Serbia. This code applies Mann - Kendall test which works for all distributions to analyze time series data for trends. If there is no trend, then probability value p is greater than 0.05, otherwise, there is a trend in time series with significant level (p-value) less or equal than 0.05 and trend could be positive or negative. 
+This Python program is used for predictive analytics estimation of the river flows in Serbia. This code applies Mann - Kendall test which works for all distributions to analyze time series data for trends. If there is no trend, then probability value p is greater than 0.05, otherwise, there is a trend in time series with significant level (p-value) less or equal than 0.05 and trend could be positive or negative. 
 
 With respect to Mann-Kendall test, the Theil-Sen estimator is used to calculate trend intercept and slope. For this purpose is used `pyMannkendal` package.
 
@@ -38,23 +38,27 @@ There are two Excel files with input data. The first one is `InputData.xlsx` and
 
 `InputData.xlsx` table contains the following variables:
 
-- **x**:   a vector (list, numpy array or pandas series) data
-- **alpha**: significance level (0.05 is the default)
-- **lag**: No. of First Significant Lags (Only available in hamed_rao_modification_test and yue_wang_modification_test)
-- **period**: seasonal cycle. For monthly data it is 12, weekly data it is 52 (Only available in seasonal tests)
+- **Year**:  year when the data were collected
+- **MinSrMes**: minimal monthly flow measurements
+- **SredGod**: Annual flow measurements
+- **station**: Number(index) of the hidrological stations.
 
 `coordinates.xlsx` table contains the following variables:
 
-- **x**:   a vector (list, numpy array or pandas series) data
-- **alpha**: significance level (0.05 is the default)
-- **lag**: No. of First Significant Lags (Only available in hamed_rao_modification_test and yue_wang_modification_test)
-- **period**: seasonal cycle. For monthly data it is 12, weekly data it is 52 (Only available in seasonal tests)
-
+- **Index**: Index number
+- **River No.**: River number in registry
+- **River basin**: Name of the river basin
+- **River**: Name of the river 
+- **Hydrological station**: Name of the Hydrological station
+- **Drainage Area (km2)**: Drainage Area (km2)
+- **X coordinate**: X coordinate of the measuring station
+- **Y coordinate**: Y coordinate of the measuring station
 
 ## Table with results
 
 Program generates `WaterFlowEstimationResultsWithCooordinates.xls` file, i.e.table, which contains the following variables:
 
+- **Index**: Index number
 - **NumberOfYears**: Number of observation(years)
 - **pValueSredGod/pValueMinSrMes**: p-value of the significance test
 - **SlopeSredGod/SlopeMinSrMes**: Theil-Sen estimator for slope
