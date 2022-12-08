@@ -24,12 +24,15 @@
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
 # PyProgramForMinimalAndAnnualTrendFlowEstimation
-This Python program estimates predictive analytics for rivers flow in Serbia. This Code applies Mann - Kendall test which works for all distributions to analyze time series data for trends. If there is no trend, then probability value p is greater than 0.05, otherwise, there is a trend in time series with significant level (p-value) less or equal than 0.05 and trend could be positive or negative. 
+This Python program estimates predictive analytics for rivers flow in Serbia. This code applies Mann - Kendall test which works for all distributions to analyze time series data for trends. If there is no trend, then probability value p is greater than 0.05, otherwise, there is a trend in time series with significant level (p-value) less or equal than 0.05 and trend could be positive or negative. 
 
 With respect to Mann-Kendall test, the Theil-Sen estimator is used to calculate trend intercept and slope. For this purpose is used `pyMannkendal` package.
 
+## Case study
+This datataset contains measurements from 3 hydrological stations of the Republic Hydrometeorological Service of Serbia. It is sample from hydrological site where data collection is carried out. There are two identical files with different extension, which contains program script, conda file - `WaterFlowEstimation.ipynb` and python file - `WaterFlowEstimation.py`
 
-## Function details:
+
+## Input datasets
 
 All Mann-Kendall test functions have almost similar input parameters. Those are:
 
@@ -38,7 +41,9 @@ All Mann-Kendall test functions have almost similar input parameters. Those are:
 - **lag**: No. of First Significant Lags (Only available in hamed_rao_modification_test and yue_wang_modification_test)
 - **period**: seasonal cycle. For monthly data it is 12, weekly data it is 52 (Only available in seasonal tests)
 
-And all Mann-Kendall tests return a named tuple which contained `WaterFlowEstimationResultsWithCooordinates.xls` file:
+## Table with results
+
+Program generates `WaterFlowEstimationResultsWithCooordinates.xls` file, i.e.table, which contains the following variables:
 
 - **NumberOfYears**: Number of observation(years)
 - **pValueSredGod/pValueMinSrMes**: p-value of the significance test
