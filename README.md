@@ -75,6 +75,27 @@ Program generates `WaterFlowEstimationResultsWithCooordinates.xls` file, i.e.tab
 - **X coordinate**: X coordinate of the measuring station
 - **Y coordinate**: Y coordinate of the measuring station
 
+
+**Part of code which give output coefficients**
+```python
+
+p=mk.original_test(df[df['station']==i]['SredGod'])[2]
+listSredGodP1.append(p)  
+pS=mk.original_test(df[df['station']==i]['SredGod'])[7]
+listSredGodS1.append(pS)  
+pI=mk.original_test(df[df['station']==i]['SredGod'])[8]
+listSredGodI1.append(pI)
+pT=mk.original_test(df[df['station']==i]['SredGod'])[0]
+listSredGodT1.append(pT)
+lstSredGodK=1/3-1/(0.31+0.91*df[df['station']==i]['SredGod'].skew(axis = 0, skipna = True)+np.sqrt((df[df['station']==i]['SredGod'].skew(axis = 0, skipna = True)*0.91)**2+1.8))
+listSredGodK.append(lstSredGodK)          
+lstSredGodLam=(df[df['station']==i]['SredGod'].std(axis = 0, skipna = True)*abs(lstSredGodK))/(np.sqrt((np.exp(sp.special.loggamma(1-2*lstSredGodK, out=None)))-(np.exp(sp.special.loggamma(1-lstSredGodK, out=None))**2)))
+listSredGodLam.append(lstSredGodLam)
+lstSredGodLocation=df[df['station']==i]['SredGod'].mean(axis = 0, skipna = True)-(lstSredGodLam*(np.exp(sp.special.loggamma(1-lstSredGodK, out=None))-1)/lstSredGodK)
+listSredGodLocation.append(lstSredGodLocation)
+
+```
+
 ## Dependencies
 
 For running program the following packages are required:
