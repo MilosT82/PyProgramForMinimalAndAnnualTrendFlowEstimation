@@ -29,7 +29,7 @@ This Python program is used for predictive analytics estimation of the river flo
 With respect to Mann-Kendall test, the Theil-Sen estimator is used to calculate trend intercept and slope. For this purpose is used `pyMannkendal` package.
 
 ## Case study
-This datataset contains measurements from 3 hydrological stations of the Republic Hydrometeorological Service of Serbia. It is sample from hydrological site where data collection is carried out. There are two identical files with different extension, which contains program script, conda file - `WaterFlowEstimation.ipynb` and python file - `WaterFlowEstimation.py`
+This datataset contains measurements from 3 hydrological stations of the Republic Hydrometeorological Service of Serbia. It is sample from hydrological site where data collection is carried out. There are two identical files with different extension, which contains program script, conda file - `WaterFlowEstimation.ipynb` and python file - `WaterFlowEstimation.py`. There is also a mathlab file - `TrendFlow.m`, which represent low-flow time series for a subset of hydrological stations showing statistically significant patterns.
 
 
 ## Input datasets
@@ -104,12 +104,16 @@ For running program the following packages are required:
 - [pyMannKendall](https://github.com/mmhs013/pyMannKendall)
 - [scipy](https://scipy.org/)
 
+## Mathlab program - TrendFlow.m
+
+The low-flow time series for a subset of hydrological stations exhibiting statistically significant trends are represented by the Mathlab file `TrendFlow.m`.
+
 ## Workmates
 
 On this project I have worked with:
 - [Milan Stojkovic, PhD](https://www.linkedin.com/in/milan-stojkovi%C4%87-0b8738b0/)
 - [Ivana Krtolica, PhD](https://www.linkedin.com/in/ivana-krtolica-96437a24b/)
-
+- Stevan Prohaska, PhD
 
 ## References
 
